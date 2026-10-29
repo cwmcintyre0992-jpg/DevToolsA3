@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Alex Morgan, a junior full-stack software developer.">
+  <title>Alex Morgan | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Assignment disclaimer: delete this block once marking is finished -->
+  <div class="disclaimer" role="note">
+    <strong>Heads up:</strong> this website was created temporarily for a course assignment.
+    You can find my actual portfolio <a href="https://example.com" target="_blank" rel="noopener">here</a>.
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">&lt;AM<span>/</span>&gt;</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="theme-toggle" aria-label="Switch colour theme">&#9790;</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, world! I'm</p>
+          <h1>Alex Morgan</h1>
+          <p class="typed-line">I build <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+          <p class="hero-sub">Junior full-stack developer who loves turning messy problems into clean, accessible and well-tested software.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-bar"><i></i><i></i><i></i><span>alex.js</span></div>
+<pre><code><span class="c-k">const</span> <span class="c-v">alex</span> = {
+  <span class="c-p">role</span>: <span class="c-s">"Software Developer"</span>,
+  <span class="c-p">focus</span>: [<span class="c-s">"Web"</span>, <span class="c-s">"APIs"</span>, <span class="c-s">"UX"</span>],
+  <span class="c-p">coffee</span>: <span class="c-k">true</span>,
+  <span class="c-p">openToWork</span>: <span class="c-k">true</span>,
+  <span class="c-f">hire</span>() {
+    <span class="c-k">return</span> <span class="c-s">"great decision"</span>;
+  }
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMMARY -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>01.</span> Summary</h2>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>I'm a software developer in training with a passion for building web applications that are both useful and enjoyable to use. I enjoy the whole journey of a project: sketching an idea, designing a data model, writing the code, and polishing the details until it feels right.</p>
+            <p>Over the past two years I've built full-stack apps, REST APIs and a handful of games, and I've worked in small teams using Git, code reviews and agile sprints. I care about readable code, accessibility and writing tests that actually catch bugs.</p>
+            <p>I'm currently seeking a co-op or junior developer position where I can learn from experienced teammates and contribute from day one.</p>
+          </div>
+          <ul class="stat-list">
+            <li><strong>8+</strong><span>Projects built</span></li>
+            <li><strong>5</strong><span>Languages used</span></li>
+            <li><strong>2</strong><span>Years of study</span></li>
+            <li><strong>100%</strong><span>Curiosity</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title"><span>02.</span> Education</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="dot"></span>
+            <div class="card">
+              <p class="date">2024 &ndash; Present</p>
+              <h3>Advanced Diploma, Computer Programming</h3>
+              <p class="place">Example College &middot; Expected graduation 2027</p>
+              <p>Core studies in object-oriented programming, data structures, databases, web development and software testing. Current GPA: 3.8 / 4.0.</p>
+              <ul class="tags">
+                <li>Data Structures &amp; Algorithms</li>
+                <li>Web Development</li>
+                <li>Databases</li>
+                <li>Software Testing</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="dot"></span>
+            <div class="card">
+              <p class="date">2020 &ndash; 2024</p>
+              <h3>Ontario Secondary School Diploma</h3>
+              <p class="place">Example Secondary School</p>
+              <p>Graduated with honours. Completed advanced courses in computer science, calculus and physics, and led the school's robotics club in my final year.</p>
+              <ul class="tags">
+                <li>Computer Science</li>
+                <li>Calculus</li>
+                <li>Robotics Club Lead</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="dot"></span>
+            <div class="card">
+              <p class="date">2025</p>
+              <h3>Certifications &amp; Self-Study</h3>
+              <p class="place">Online</p>
+              <p>Completed courses on modern JavaScript, Git workflows and cloud fundamentals to keep learning beyond the classroom.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>03.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <div class="skill"><div class="skill-head"><span>JavaScript</span><span>90%</span></div><div class="bar"><div class="fill" data-level="90"></div></div></div>
+            <div class="skill"><div class="skill-head"><span>Python</span><span>85%</span></div><div class="bar"><div class="fill" data-level="85"></div></div></div>
+            <div class="skill"><div class="skill-head"><span>Java</span><span>75%</span></div><div class="bar"><div class="fill" data-level="75"></div></div></div>
+            <div class="skill"><div class="skill-head"><span>SQL</span><span>80%</span></div><div class="bar"><div class="fill" data-level="80"></div></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Web &amp; Frameworks</h3>
+            <div class="skill"><div class="skill-head"><span>HTML &amp; CSS</span><span>95%</span></div><div class="bar"><div class="fill" data-level="95"></div></div></div>
+            <div class="skill"><div class="skill-head"><span>React</span><span>80%</span></div><div class="bar"><div class="fill" data-level="80"></div></div></div>
+            <div class="skill"><div class="skill-head"><span>Node.js / Express</span><span>78%</span></div><div class="bar"><div class="fill" data-level="78"></div></div></div>
+            <div class="skill"><div class="skill-head"><span>Bootstrap</span><span>88%</span></div><div class="bar"><div class="fill" data-level="88"></div></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Tools &amp; Practices</h3>
+            <ul class="tags big">
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>Docker</li>
+              <li>REST APIs</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Jest</li>
+              <li>Agile / Scrum</li>
+              <li>Figma</li>
+              <li>Accessibility (WCAG)</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Soft Skills</h3>
+            <ul class="tags big">
+              <li>Teamwork</li>
+              <li>Clear communication</li>
+              <li>Problem solving</li>
+              <li>Time management</li>
+              <li>Adaptability</li>
+              <li>Attention to detail</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title"><span>04.</span> Projects</h2>
+        <p class="section-note">A selection of things I've built. (Some are pretend projects created for this assignment.)</p>
+        <div class="project-grid">
+
+          <article class="project reveal">
+            <div class="project-img grad-1"><span>&#128203;</span></div>
+            <div class="project-body">
+              <h3>TaskFlow</h3>
+              <p>A Kanban-style task manager with drag-and-drop boards, due-date reminders and real-time collaboration, so small teams can see who is doing what.</p>
+              <ul class="tags"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
+              <div class="project-links"><a href="#" aria-label="TaskFlow source code">Code &rarr;</a><a href="#" aria-label="TaskFlow live demo">Live demo &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-img grad-2"><span>&#127858;</span></div>
+            <div class="project-body">
+              <h3>PantryPal</h3>
+              <p>A recipe finder that suggests meals based on the ingredients you already have, cutting food waste. Includes a searchable recipe API and a responsive UI.</p>
+              <ul class="tags"><li>JavaScript</li><li>Express</li><li>PostgreSQL</li></ul>
+              <div class="project-links"><a href="#" aria-label="PantryPal source code">Code &rarr;</a><a href="#" aria-label="PantryPal live demo">Live demo &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-img grad-3"><span>&#128202;</span></div>
+            <div class="project-body">
+              <h3>BudgetBuddy</h3>
+              <p>A personal finance dashboard that imports CSV bank statements, categorizes spending automatically and visualizes monthly trends with interactive charts.</p>
+              <ul class="tags"><li>Python</li><li>Flask</li><li>Chart.js</li></ul>
+              <div class="project-links"><a href="#" aria-label="BudgetBuddy source code">Code &rarr;</a><a href="#" aria-label="BudgetBuddy live demo">Live demo &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-img grad-4"><span>&#127918;</span></div>
+            <div class="project-body">
+              <h3>Dungeon Dice</h3>
+              <p>A browser-based, turn-based dungeon crawler built from scratch with vanilla JavaScript and the Canvas API. Features procedurally generated levels and local high scores.</p>
+              <ul class="tags"><li>JavaScript</li><li>Canvas API</li><li>CSS</li></ul>
+              <div class="project-links"><a href="#" aria-label="Dungeon Dice source code">Code &rarr;</a><a href="#" aria-label="Dungeon Dice live demo">Play it &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-img grad-5"><span>&#127793;</span></div>
+            <div class="project-body">
+              <h3>GreenSpace</h3>
+              <p>A community garden scheduling app that lets neighbours book plots, share tool inventories and swap seeds. Built in a four-person agile team.</p>
+              <ul class="tags"><li>Java</li><li>Spring Boot</li><li>MySQL</li></ul>
+              <div class="project-links"><a href="#" aria-label="GreenSpace source code">Code &rarr;</a><a href="#" aria-label="GreenSpace live demo">Live demo &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-img grad-6"><span>&#127780;</span></div>
+            <div class="project-body">
+              <h3>SkyCast</h3>
+              <p>A clean weather app that consumes a public weather API, caches responses and shows a 5-day forecast with accessible colour contrast and keyboard navigation.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-links"><a href="#" aria-label="SkyCast source code">Code &rarr;</a><a href="#" aria-label="SkyCast live demo">Live demo &rarr;</a></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>05.</span> Resume</h2>
+        <div class="resume reveal" id="resume-sheet">
+          <div class="resume-top">
+            <div>
+              <h3>Alex Morgan</h3>
+              <p>Junior Full-Stack Developer</p>
+            </div>
+            <button class="btn btn-primary no-print" onclick="window.print()">Print / Save as PDF</button>
+          </div>
+
+          <div class="resume-cols">
+            <div>
+              <h4>Experience</h4>
+              <div class="resume-item">
+                <p class="r-title">Web Development Intern</p>
+                <p class="r-meta">Example Tech Studio &middot; May &ndash; Aug 2026</p>
+                <ul>
+                  <li>Built responsive UI components in React, improving page load time by 30%.</li>
+                  <li>Wrote 60+ unit tests with Jest, raising code coverage from 45% to 82%.</li>
+                  <li>Collaborated in two-week sprints and participated in daily stand-ups and code reviews.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <p class="r-title">Peer Tutor, Programming</p>
+                <p class="r-meta">Example College &middot; Sep 2025 &ndash; Present</p>
+                <ul>
+                  <li>Tutor 10+ first-year students each week in Python and JavaScript fundamentals.</li>
+                  <li>Created study guides and practice exercises adopted by the program.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <p class="r-title">Hackathon Participant</p>
+                <p class="r-meta">Example Hack &middot; 2025</p>
+                <ul>
+                  <li>Placed 2nd of 40 teams by building a working accessibility-checker prototype in 24 hours.</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h4>Education</h4>
+              <div class="resume-item">
+                <p class="r-title">Advanced Diploma, Computer Programming</p>
+                <p class="r-meta">Example College &middot; 2024 &ndash; 2027</p>
+              </div>
+              <h4>Technical Skills</h4>
+              <p class="r-skills"><strong>Languages:</strong> JavaScript, Python, Java, SQL, HTML, CSS</p>
+              <p class="r-skills"><strong>Frameworks:</strong> React, Node.js, Express, Flask, Bootstrap</p>
+              <p class="r-skills"><strong>Tools:</strong> Git, Docker, Jest, PostgreSQL, MongoDB, Figma</p>
+              <h4>Awards</h4>
+              <ul>
+                <li>Dean's Honour List, 2025 &amp; 2026</li>
+                <li>2nd Place, Example Hack 2025</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title"><span>06.</span> Contact</h2>
+        <div class="contact-wrap reveal">
+          <p class="contact-lead">I'm currently looking for co-op and junior opportunities. Whether you have a role in mind, a question, or just want to say hello, my inbox is always open!</p>
+          <ul class="contact-list">
+            <li><span class="ci">&#9993;</span><div><strong>Email</strong><a href="mailto:alex.morgan@example.com">alex.morgan@example.com</a></div></li>
+            <li><span class="ci">&#128188;</span><div><strong>LinkedIn</strong><a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/alex-morgan</a></div></li>
+            <li><span class="ci">&#128025;</span><div><strong>GitHub</strong><a href="https://github.com/" target="_blank" rel="noopener">github.com/alex-morgan</a></div></li>
+            <li><span class="ci">&#128205;</span><div><strong>Location</strong><span>Canada &middot; open to remote</span></div></li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:alex.morgan@example.com?subject=Hello%20Alex">Say hello</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Alex Morgan. Designed and built with HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+      <a href="#home" class="to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
