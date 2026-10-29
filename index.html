@@ -120,43 +120,27 @@
         <div class="skills-grid">
           <div class="skill-card reveal">
             <h3>Languages</h3>
-            <div class="skill"><div class="skill-head"><span>JavaScript</span><span>90%</span></div><div class="bar"><div class="fill" data-level="90"></div></div></div>
-            <div class="skill"><div class="skill-head"><span>Python</span><span>85%</span></div><div class="bar"><div class="fill" data-level="85"></div></div></div>
-            <div class="skill"><div class="skill-head"><span>Java</span><span>75%</span></div><div class="bar"><div class="fill" data-level="75"></div></div></div>
-            <div class="skill"><div class="skill-head"><span>SQL</span><span>80%</span></div><div class="bar"><div class="fill" data-level="80"></div></div></div>
+            <ul class="tags big"><li>JavaScript</li><li>Python</li><li>Java</li><li>C#</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
           </div>
           <div class="skill-card reveal">
-            <h3>Web &amp; Frameworks</h3>
-            <div class="skill"><div class="skill-head"><span>HTML &amp; CSS</span><span>95%</span></div><div class="bar"><div class="fill" data-level="95"></div></div></div>
-            <div class="skill"><div class="skill-head"><span>React</span><span>80%</span></div><div class="bar"><div class="fill" data-level="80"></div></div></div>
-            <div class="skill"><div class="skill-head"><span>Node.js / Express</span><span>78%</span></div><div class="bar"><div class="fill" data-level="78"></div></div></div>
-            <div class="skill"><div class="skill-head"><span>Bootstrap</span><span>88%</span></div><div class="bar"><div class="fill" data-level="88"></div></div></div>
+            <h3>Libraries &amp; Frameworks</h3>
+            <ul class="tags big"><li>React</li><li>Node.js</li><li>Express</li><li>Bootstrap</li><li>jQuery</li><li>Flask</li></ul>
           </div>
           <div class="skill-card reveal">
-            <h3>Tools &amp; Practices</h3>
-            <ul class="tags big">
-              <li>Git &amp; GitHub</li>
-              <li>VS Code</li>
-              <li>Docker</li>
-              <li>REST APIs</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
-              <li>Jest</li>
-              <li>Agile / Scrum</li>
-              <li>Figma</li>
-              <li>Accessibility (WCAG)</li>
-            </ul>
+            <h3>Databases</h3>
+            <ul class="tags big"><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>SQLite</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Tools</h3>
+            <ul class="tags big"><li>Git &amp; GitHub</li><li>VS Code</li><li>Docker</li><li>Postman</li><li>Figma</li><li>Linux / Bash</li></ul>
           </div>
           <div class="skill-card reveal">
             <h3>Soft Skills</h3>
-            <ul class="tags big">
-              <li>Teamwork</li>
-              <li>Clear communication</li>
-              <li>Problem solving</li>
-              <li>Time management</li>
-              <li>Adaptability</li>
-              <li>Attention to detail</li>
-            </ul>
+            <ul class="tags big"><li>Teamwork</li><li>Clear communication</li><li>Problem solving</li><li>Time management</li><li>Adaptability</li><li>Attention to detail</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Besides Tech</h3>
+            <p class="besides">When I'm not coding you'll find me [EDIT: add your hobbies, sports, volunteering or part-time jobs here]. These keep me balanced and teach me discipline, patience and teamwork.</p>
           </div>
         </div>
       </div>
@@ -166,7 +150,7 @@
     <section id="projects" class="section alt">
       <div class="container">
         <h2 class="section-title"><span>04.</span> Projects</h2>
-        <p class="section-note">A selection of things I've built. (These are sample projects created for this assignment.)</p>
+        <p class="section-note">A selection of things I've built. (These are sample projects created for this assignment. Each lists the technologies used and what I contributed.)</p>
         <div class="project-grid">
 
           <article class="project reveal">
@@ -174,8 +158,9 @@
             <div class="project-body">
               <h3>TaskFlow</h3>
               <p>A Kanban-style task manager with drag-and-drop boards, due-date reminders and real-time collaboration, so small teams can see who is doing what.</p>
+              <p class="role"><strong>My role:</strong> Designed the data model, built the React drag-and-drop board and the REST API, and wrote the tests.</p>
               <ul class="tags"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
-              <div class="project-links"><a href="#" aria-label="TaskFlow source code">Code &rarr;</a><a href="#" aria-label="TaskFlow live demo">Live demo &rarr;</a></div>
+              <div class="project-links"><a href="#" aria-label="TaskFlow source code">Code &rarr;</a><a href="#" aria-label="TaskFlow demo video">Demo video &rarr;</a><a href="#" aria-label="TaskFlow live demo">Live demo &rarr;</a></div>
             </div>
           </article>
 
@@ -184,8 +169,9 @@
             <div class="project-body">
               <h3>PantryPal</h3>
               <p>A recipe finder that suggests meals based on the ingredients you already have, cutting food waste. Includes a searchable recipe API and a responsive UI.</p>
+              <p class="role"><strong>My role:</strong> Built the recipe search API, wrote the SQL queries and designed the responsive interface.</p>
               <ul class="tags"><li>JavaScript</li><li>Express</li><li>PostgreSQL</li></ul>
-              <div class="project-links"><a href="#" aria-label="PantryPal source code">Code &rarr;</a><a href="#" aria-label="PantryPal live demo">Live demo &rarr;</a></div>
+              <div class="project-links"><a href="#" aria-label="PantryPal source code">Code &rarr;</a><a href="#" aria-label="PantryPal demo video">Demo video &rarr;</a><a href="#" aria-label="PantryPal live demo">Live demo &rarr;</a></div>
             </div>
           </article>
 
@@ -194,8 +180,9 @@
             <div class="project-body">
               <h3>BudgetBuddy</h3>
               <p>A personal finance dashboard that imports CSV bank statements, categorizes spending automatically and visualizes monthly trends with interactive charts.</p>
+              <p class="role"><strong>My role:</strong> Wrote the CSV import and categorization logic and built the interactive charts.</p>
               <ul class="tags"><li>Python</li><li>Flask</li><li>Chart.js</li></ul>
-              <div class="project-links"><a href="#" aria-label="BudgetBuddy source code">Code &rarr;</a><a href="#" aria-label="BudgetBuddy live demo">Live demo &rarr;</a></div>
+              <div class="project-links"><a href="#" aria-label="BudgetBuddy source code">Code &rarr;</a><a href="#" aria-label="BudgetBuddy demo video">Demo video &rarr;</a><a href="#" aria-label="BudgetBuddy live demo">Live demo &rarr;</a></div>
             </div>
           </article>
 
@@ -204,8 +191,9 @@
             <div class="project-body">
               <h3>Dungeon Dice</h3>
               <p>A browser-based, turn-based dungeon crawler built from scratch with vanilla JavaScript and the Canvas API. Features procedurally generated levels and local high scores.</p>
+              <p class="role"><strong>My role:</strong> Solo project: built the game loop, level generator and rendering from scratch.</p>
               <ul class="tags"><li>JavaScript</li><li>Canvas API</li><li>CSS</li></ul>
-              <div class="project-links"><a href="#" aria-label="Dungeon Dice source code">Code &rarr;</a><a href="#" aria-label="Dungeon Dice live demo">Play it &rarr;</a></div>
+              <div class="project-links"><a href="#" aria-label="Dungeon Dice source code">Code &rarr;</a><a href="#" aria-label="Dungeon Dice demo video">Demo video &rarr;</a><a href="#" aria-label="Dungeon Dice live demo">Play it &rarr;</a></div>
             </div>
           </article>
 
@@ -214,8 +202,9 @@
             <div class="project-body">
               <h3>GreenSpace</h3>
               <p>A community garden scheduling app that lets neighbours book plots, share tool inventories and swap seeds. Built in a four-person agile team.</p>
+              <p class="role"><strong>My role:</strong> Team of four: built the booking feature and the MySQL schema, and ran our code reviews.</p>
               <ul class="tags"><li>Java</li><li>Spring Boot</li><li>MySQL</li></ul>
-              <div class="project-links"><a href="#" aria-label="GreenSpace source code">Code &rarr;</a><a href="#" aria-label="GreenSpace live demo">Live demo &rarr;</a></div>
+              <div class="project-links"><a href="#" aria-label="GreenSpace source code">Code &rarr;</a><a href="#" aria-label="GreenSpace demo video">Demo video &rarr;</a><a href="#" aria-label="GreenSpace live demo">Live demo &rarr;</a></div>
             </div>
           </article>
 
@@ -224,8 +213,9 @@
             <div class="project-body">
               <h3>SkyCast</h3>
               <p>A clean weather app that consumes a public weather API, caches responses and shows a 5-day forecast with accessible colour contrast and keyboard navigation.</p>
+              <p class="role"><strong>My role:</strong> Built the API integration and caching, and tested keyboard navigation and colour contrast.</p>
               <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-              <div class="project-links"><a href="#" aria-label="SkyCast source code">Code &rarr;</a><a href="#" aria-label="SkyCast live demo">Live demo &rarr;</a></div>
+              <div class="project-links"><a href="#" aria-label="SkyCast source code">Code &rarr;</a><a href="#" aria-label="SkyCast demo video">Demo video &rarr;</a><a href="#" aria-label="SkyCast live demo">Live demo &rarr;</a></div>
             </div>
           </article>
 
@@ -243,7 +233,7 @@
               <h3>Colin McIntyre</h3>
               <p>Software Development Student</p>
             </div>
-            <button class="btn btn-primary no-print" onclick="window.print()">Print / Save as PDF</button>
+            <div class="resume-actions no-print"><a class="btn btn-primary" href="resume.pdf" download>Download PDF</a><button class="btn btn-outline" onclick="window.print()">Print</button></div>
           </div>
 
           <div class="resume-cols">
@@ -272,21 +262,6 @@
                 <ul>
                   <li>No formal work term yet, so I've gained experience through academic and personal projects.</li>
                   <li>Comfortable with Git workflows, code reviews and working in small agile teams.</li>
-                </ul>
-              </div>
-              <h4>Selected Projects</h4>
-              <div class="resume-item">
-                <p class="r-title">TaskFlow &middot; Kanban task manager</p>
-                <p class="r-meta">React, Node.js, MongoDB</p>
-                <ul>
-                  <li>Drag-and-drop boards with due-date reminders and real-time collaboration.</li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <p class="r-title">BudgetBuddy &middot; Finance dashboard</p>
-                <p class="r-meta">Python, Flask, Chart.js</p>
-                <ul>
-                  <li>Imports CSV bank statements, categorizes spending and charts monthly trends.</li>
                 </ul>
               </div>
             </div>
@@ -335,4 +310,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
