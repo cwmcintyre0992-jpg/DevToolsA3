@@ -354,9 +354,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ========== Print (resume only) ========== */
 @media print {
-  body * { visibility: hidden; }
-  #resume-sheet, #resume-sheet * { visibility: visible; }
-  #resume-sheet { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; border: 0; }
-  .no-print { display: none !important; }
+  .disclaimer, .site-header, .site-footer, main > section:not(#resume), .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  #resume { padding: 0; background: #fff; }
+  #resume .section-title { display: none; }
+  #resume-sheet { box-shadow: none; border: 0; padding: 0; background: #fff; }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* ===== Added: skills note, project role, resume actions ===== */
+.besides { color: var(--muted); margin: 0; }
+.project-body p.role { font-size: 0.92rem; color: var(--text); background: color-mix(in srgb, var(--accent) 10%, transparent); border-left: 3px solid var(--accent); padding: 0.5rem 0.8rem; border-radius: 0 8px 8px 0; flex: 0; }
+.resume-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.project-links { flex-wrap: wrap; }
